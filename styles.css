@@ -1,0 +1,373 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+p {
+  color: #fff;
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(3, 33.33%);
+  grid-template-areas: "box1 box1 box2 box9 box9"
+                       "box3 box4 box5 box9 box9"
+                       "box6 box7 box8 box9 box9";
+  height: 100vh;
+}
+
+.boxes {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+}
+.sm-boxes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  font-size: 1.1rem;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: .5em .9em;
+  margin-top: 1em;
+}
+
+.button:hover {
+  border-color: #FB8236;
+  color: #3b7aa3;
+  cursor:pointer;
+
+}
+
+.stop-btn {
+  margin-left: 5rem;
+}
+
+.volume, .mute {
+  width: .9rem;
+}
+
+.sm-img {
+  width: 5vw;
+}
+
+.box1 {
+  background-color: #000;
+  color: #FB8236;
+  font-size: 1.5rem;
+  font-weight: 700;
+  grid-area: box1;
+  padding: 3rem 2.5rem;
+  position: relative;
+}
+
+
+.box1-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.box1-text {
+  color: #3b7aa3;
+  font-size: 1.65rem;
+  margin: 0;
+  padding-top: .6rem
+}
+
+.box2 {
+  grid-area: box2;
+  position: relative;
+  background-color: #FB8236;
+}
+
+.box3 {
+  grid-area: box3;
+  position: relative;
+  background-color: #3B7AA3;
+}
+
+.box4 {
+  grid-area: box4;
+  position: relative;
+  background-color: #D7263D;
+}
+
+.box5 {
+  grid-area: box5;
+  position: relative;
+  background-color: #2E294E;
+}
+
+.box6 {
+  grid-area: box6;
+  position: relative;
+  background-color: #1B998B;
+}
+
+.box7 {
+  grid-area: box7;
+  position: relative;
+  background-color: #3B7AA3;
+}
+
+.box8 {
+  grid-area: box8;
+  position: relative;
+  background-color: #1B998B;
+}
+
+.box9 {
+  background-image: url("large-images/frankpic5.png");
+  background-size: cover;
+  grid-area: box9;
+  overflow: hidden;
+  position: relative;
+}
+
+.link-box9 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  height: 6vh;
+}
+
+.lrg-img-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 3vw;
+  margin: 0;
+}
+
+.carousel1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  top: -43vh;
+  right: 0;
+}
+
+.carousel2 {
+  position: absolute;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  top: -43vh;
+  right: 1.5rem;
+}
+
+.carousel3 {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  top: -43vh;
+  right: 3rem;
+  background-color: #000;
+  border-color: #FB8236;
+}
+
+
+.backward-icon:hover {
+  content: url(Icons/backward-hover.svg);
+  cursor:pointer;
+}
+
+.forward-icon:hover {
+  content: url(Icons/forward-hover.svg);
+  cursor:pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(15, 14%);
+    grid-template-areas: "box1"
+                         "box1"
+                         "box2"
+                         "box3"
+                         "box4"
+                         "box5"
+                         "box6"
+                         "box7"
+                         "box8"
+                         "box9"
+                         "box9"
+                         "box9"
+                         "box9"
+                         "box9"
+                         "box9"
+                         "box9";
+    width: 100%;
+    height: 80vh;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding-top: 0;
+  }
+  .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .box1-title {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+  }
+
+  .box1-text {
+    display: flex;
+    font-size: 1.38rem;
+    justify-content: center;
+    padding: .3rem 0;
+  }
+  
+  .button {
+    font-size: 1rem;
+    padding: .3em .7em;
+  }
+
+  .top-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 0;
+  }
+
+  .volume {
+    padding-right: .2rem;
+  }
+
+  .stop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 0;
+  }
+
+  .mute {
+    padding-right: .2rem;
+  }
+
+  .sm-boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.5rem;
+    justify-content: center;
+  } 
+
+  .link-box2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: center;
+  } 
+
+  .lrg-img-icons {
+    width: 5vw;
+  }
+  .sm-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .15rem;
+    padding-right: .5rem;
+    width: 1.5rem;
+  }
+
+  .duplicate-sm2 {
+    content: url(Icons/007-speaker.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .duplicate-sm3 {
+    content: url(Icons/017-microphone-1.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .duplicate-sm4 {
+    content: url(Icons/026-equalizer.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .duplicate-sm5 {
+    content: url(Icons/028-vinyl.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .duplicate-sm6 {
+    content: url(Icons/022-headphones.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .duplicate-sm7 {
+    content: url(Icons/035-jack.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .duplicate-sm8 {
+    content: url(Icons/cassette.svg);
+    width: 1.5rem;
+    padding-left: .5rem;
+  }
+  .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 915px) {
+  .wrapper {
+  background-image: url("large-images/Frankpic1.jpg") fixed;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(6, 20%);
+  grid-template-areas: "box1 box1 box2"
+                       "box3 box4 box5"
+                       "box6 box7 box8"
+                       "box9 box9 box9"
+                       "box9 box9 box9"
+                       "box9 box9 box9";
+  height: 175vh;
+  width: 100%;
+  }
+  .lrg-img-icons {
+    width: 5vw;
+  }
+}
+
+/*@media screen and (min-width: 1250px) {
+  .wrapper {
+    width: 90%;*/
